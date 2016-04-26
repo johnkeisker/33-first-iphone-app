@@ -1,0 +1,21 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Add a Movie</h1>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="list">
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" placeholder="Movie Name" ng-model="movieCtrl.movie">
+        </label>
+        <button class="button button-small button-positive" ng-click="movieCtrl.addMovie()">
+          ADD
+        </button>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-modal-view>

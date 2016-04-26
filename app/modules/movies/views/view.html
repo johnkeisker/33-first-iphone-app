@@ -1,0 +1,20 @@
+<ion-view>
+  <ion-nav-title>Movies!</ion-nav-title>
+  <ion-nav-buttons side="secondary">
+    <button class="button button-large button-positive" ng-click="movieCtrl.showForm()">
+      ADD
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="list">
+
+      <a class="item item-thumbnail-left" href="#" ng-repeat="movie in movieCtrl.movies">
+        <img ng-src="{{ movie.Poster }}">
+        <h2>{{ movie.Title }}</h2>
+        <p>{{ movie.Plot }}</p>
+      </a>
+
+    </div>
+
+  </ion-content>
+</ion-view>
